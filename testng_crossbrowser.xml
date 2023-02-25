@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests" >
+
+	<parameter name="environment" value="testing" />
+	<test name="ChromeTest">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+
+			<class name="com.diligend.testCases.ManagerQuestionnaire.TC_DiligendMNCQuestionnaireListpage"/>
+			<class name="com.diligend.BaseClass.DiligendBaseClass" />
+			 </classes>
+	</test>
+	<test name="EdgeTest">
+		<parameter name="browser" value="Edge" />
+		<classes>
+
+			<class
+				name="com.diligend.testCases.ManagerQuestionnaire.TC_DiligendMNCQuestionnaireListpage" />
+				<class name="com.diligend.BaseClass.DiligendBaseClass" />
+				  </classes>
+	</test>
+
+	<!-- <test thread-count="5" name="Run">e <packages> <package name="com.diligend.testCases.*" 
+		/> </packages> <classes> <class name="com.diligend.testCases.TC_Diligend_Login_LogoutTest_001"/> 
+		<class name="com.diligend.testCases.TC_Diligend_Login_LogoutTest_001" /> 
+		<class name="com.diligend.BaseClass.DiligendBaseClass" /> </classes> </test> --><!-- Test -->
+</suite> <!-- Suite -->
